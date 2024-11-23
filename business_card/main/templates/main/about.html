@@ -1,11 +1,11 @@
 {% extends 'main/layout.html' %}
 
-{% block title %} Мои достижения {% endblock %}
+{% block title %}{{ title| upper }}{% endblock %}
 
 
 {% block content %}
     <div class="features">
-    <h1> Мои достижения </h1>
+    <h1>{{ title }}</h1>
     <p>Тут будут мои достижения</p>
     <button class="btn btn-warning">На страницу мои проекты</button>
     </div>

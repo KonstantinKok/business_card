@@ -1,13 +1,13 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Главная страница{% endblock %}
+{% block title %}{{ title| upper }}{% endblock %}
 
 
 {% block content %}
     <div class="features">
-    <h1> Главная страница </h1>
-    <p>Тут будут новости или блог. Я еще не определился</p>
-    <button class="btn btn-warning">На страницу обо мне</button>
+        <h1>{{ title }}</h1>
+        <p>Тут что-то будет. И будет что-то супер важное</p>
+        <button class="btn btn-warning"> На страницу новости </button>
     </div>
 
 {% endblock %}
