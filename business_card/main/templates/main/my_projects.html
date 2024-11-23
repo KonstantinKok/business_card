@@ -6,7 +6,7 @@
 {% block content %}
     <div class="features">
     <h1>{{ title }}</h1>
-    <p>Тут будет список моих проектов, которые сделаны, а так же скорее всего ссылки на GitHab</p>
-    <button class="btn btn-warning">На страницу контакты</button>
+        <a href="{% url 'contacts' %}"><button class="btn btn-warning">На страницу контакты</button></a>
+        <p>Тут будет список моих проектов, которые сделаны, а так же скорее всего ссылки на GitHab</p>
     </div>
 {% endblock %}

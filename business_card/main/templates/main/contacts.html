@@ -6,7 +6,7 @@
 {% block content %}
     <div class="features">
     <h1>{{ title}}</h1>
-    <p>Тут будет возможность связаться со мной</p>
-    <button class="btn btn-warning">На главную страницу </button>
+        <a href="{% url 'home' %}"><button class="btn btn-warning">На главную страницу </button></a>
+        <p>Тут будет возможность связаться со мной</p>
     </div>
 {% endblock %}

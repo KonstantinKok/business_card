@@ -6,8 +6,19 @@
 {% block content %}
     <div class="features">
         <h1>Новости</h1>
-        <p>Тут будет мой личный блог</p>
-        <button class="btn btn-warning">На страницу мои достижения</button>
+        <a href="{% url 'about' %}"><button class="btn btn-warning">На страницу мои достижения</button></a>
+
+        {% if news %}
+            {% for i in news %}
+                <div class='alert alert-warning'>
+                    <h3>{{ i.title }}</h3>
+                    <p>{{ i.anons }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>На данный момент здесь нет записей.
+                Вы можете ознакомиться с другими разделами</p>
+        {% endif %}
     </div>
 
 {% endblock %}
