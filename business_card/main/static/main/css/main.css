@@ -13,7 +13,7 @@ aside{
 }
 
 aside img{
-    width: 185px;
+    width: 220px;
     float: left;
 }
 
@@ -55,7 +55,7 @@ main .features {
 }
 
 main .features h1 {font-size: 50px;}
-main .features p {max-width: 400px; margin: 20px auto}
+main .features p {max-width: 800px; margin: 20px auto}
 
 .alert-warning {
     float: left;
