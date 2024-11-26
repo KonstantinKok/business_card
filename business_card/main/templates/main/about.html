@@ -6,7 +6,13 @@
 {% block content %}
     <div class="features">
     <h1>{{ title }}</h1>
-        <a href="{% url 'my_projects' %}"><button class="btn btn-warning">На страницу мои проекты</button></a>
-    <p>Тут будут мои достижения</p>
+        <a href="{% url 'my_projects' %}"><button class="btn btn-warning">На страницу мои проекты</button></a><br>
+        <br>
+        <br>
+
+
+        <img src='static/main/img/diplom.jpg' alt='Диплом' hspace = "50px" width="500" height="400" align='left'>
+
+        <img src='static/main/img/sertifikat.jpg' alt='Сертификат' width="500" height="400" align='right'>
     </div>
 {% endblock %}
